@@ -37,10 +37,6 @@ int Max_sum(int arr[], int size_arr)
 			}
 			end = i;
 		}
-		else
-		{
-			//std::cout << "     [" << max_so_far << "," << curr_max << "]" << std::endl;
-		}
 
 	}
 
