@@ -12,6 +12,8 @@ void print_arr(int array[], int size_arr)
 }
 
 
+
+
 int MinDiff(int a[], int n, int k)
 {
     std::sort(a,a+n); 

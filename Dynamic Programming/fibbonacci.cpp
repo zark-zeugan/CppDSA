@@ -16,11 +16,25 @@ long long int fib(long long int n)
    return f[n];
 }
 
+// Other method - 
 
+long long int fibbo_tabulation(int n)
+{
+   long long int v[n+1] = { 0 };
+   v[1] = 1;
+
+   for(int i = 0; i < n+1; i++)
+   {
+      v[i+1] = v[i+1] + v[i];
+      v[i+2] = v[i+2] + v[i]; 
+   }
+
+   return v[n];
+}
 
 int main()
 {
-	std::cout << fib(50) << std::endl;
+	std::cout << fibbo_tabulation(50) << std::endl;
 	return 0;
 }	
 

@@ -58,9 +58,9 @@ std::vector<int> howSum_brute(int target, std::vector<int> nums)
 
 int main()
 {
-	std::vector<int> v = {2,4};
+	std::vector<int> v = {2,4,3};
 	v = howSum_brute(7,v);
-
+	std::cout << "- - - " << std::endl;
 	print_arr(v);
 
 
